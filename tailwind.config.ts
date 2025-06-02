@@ -1,3 +1,4 @@
+import { poiretOne } from "@/app/fonts/fonts";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -9,6 +10,9 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			poiretOne: ['var(--font-poiret-one)'],
+		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
