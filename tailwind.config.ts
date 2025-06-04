@@ -1,4 +1,3 @@
-import { poiretOne } from "@/app/fonts/fonts";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -10,6 +9,15 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		animation: {
+			marquee: 'marquee 30s linear infinite',
+		},
+		keyframes: {
+			marquee: {
+				'0%': { transform: 'translateX(100%)' },
+				'100%': { transform: 'translateX(-100%)' },
+			},
+		},
 		fontFamily: {
 			poiretOne: ['var(--font-poiret-one)'],
 		},
