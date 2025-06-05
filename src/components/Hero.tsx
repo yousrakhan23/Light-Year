@@ -6,8 +6,10 @@ import AutoCarousel from "./Carousel";
 export default function Home() {
   return (
     <div>
+      
       <main className="min-h-screen bg-[url('/images/background.jpg')] bg-cover bg-center text-slate-950 flex items-center justify-center px-6">
         <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+          
           {/* Left: Text Section */}
           <div className="space-y-6">
             {/* <span className="inline-block px-4 py-1 text-sm rounded-full">Smart Shopping, Timeless Design – Powered by AI.</span> */}
