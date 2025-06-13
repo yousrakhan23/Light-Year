@@ -38,12 +38,12 @@ export default function AutoCarousel() {
       >
         {images.map((src, index) => (
           <SwiperSlide key={index}>
-            <div className="overflow-hidden rounded-xl shadow-lg">
+            <div className="overflow-hidden rounded-xl shadow-lg ">
               <Image
                 src={src}
                 alt={`Image ${index}`}
-                width={400}
-                height={600}
+                width={300}
+                height={500}
                 className="w-full h-auto object-cover"
               />
             </div>

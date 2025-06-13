@@ -2,9 +2,11 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import AutoCarousel from "./Carousel";
+import HeroBanner from "./HeroBanner";
 
 export default function Home() {
   return (
+    <>
     <div>
       
       <main className="min-h-screen bg-[url('/images/background.jpg')] bg-cover bg-center text-slate-950 flex items-center justify-center px-6">
@@ -72,7 +74,24 @@ export default function Home() {
         <AutoCarousel />
       </div>
     </div>
+    <div className="relative mx-auto px-4 py-12">
+  {/* Background image with blur */}
+  <div 
+    className="absolute inset-0 bg-[url('/images/banner_bg.jpg')] bg-center blur-sm"
+    aria-hidden="true"
+  />
+  
+  {/* Semi-transparent overlay */}
+  <div className="absolute inset-0 bg-black/30" aria-hidden="true" />
+  
+  {/* Content container with relative positioning */}
+  <div className="relative z-10">
+    <HeroBanner />
+  </div>
+</div>
+    </>
   );
+  
 }
 
 // bg-gradient-to-br from-[#0f0220] to-[#1a0c3d]

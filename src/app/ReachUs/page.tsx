@@ -53,7 +53,7 @@ const ReachUsPage = () => {
           >
             <motion.h1
               variants={itemVariants}
-              className="text-4xl font-bold text-fuchsia-500 sm:text-5xl mb-4"
+              className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-fuchsia-500 mb-4"
             >
               Reach Out to Us
             </motion.h1>
